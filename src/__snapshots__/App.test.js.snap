@@ -18,6 +18,8 @@ exports[`App should display school districts 1`] = `
   <CompareCard
     compareDistrictAverages={[Function]}
     compareSelections={Array []}
+    isClicked={false}
+    toggleButtonClick={[Function]}
   />
   <CardContainer
     addCompareSelections={[Function]}

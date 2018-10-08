@@ -10,6 +10,7 @@
   font-family: 'Roboto', sans-serif;
   text-align: center;
   transition: background 0.1s linear;
+  transition: transform 0.1s linear;
   padding: 10px;
   opacity: 0.8;
   background: white;
@@ -36,7 +37,7 @@
 
 .card:hover {
   cursor: pointer;
-  /*transform:scale(1.1);*/
+  transform:scale(1.05);
   background: #D7E1F0;
 }
 

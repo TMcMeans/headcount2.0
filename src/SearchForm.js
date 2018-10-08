@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './SearchForm.css'
+import './SearchForm.css';
 
 class SearchForm extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       schoolName: ''
-    }
+    };
   }
 
 saveUserInput = (e) => {
   this.setState({
     schoolName: e.target.value
-  })
-  this.props.filterCards(this.state.schoolName)
+  });
+  this.props.filterCards(this.state.schoolName);
 }
 
 render() { 
@@ -22,18 +22,18 @@ render() {
     <div>
       <form className="search-field">
         <input type="text" 
-               placeholder="search for a school district..."
-               onChange={(e) => {this.saveUserInput(e)}}
-               />
+          placeholder="search for a school district..."
+          onChange={(e) => { this.saveUserInput(e); }}
+        />
       </form>
     </div>
-   )
- }
+  );
+}
 }
 
 SearchForm.propTypes = {
   filterCards: PropTypes.func
-}
+};
 
 
 export default SearchForm; 

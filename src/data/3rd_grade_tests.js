@@ -1,5 +1,5 @@
 module.exports =
-[
+[e
   {
     "Location": "Colorado",
     "Score": "Math",
